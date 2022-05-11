@@ -46,7 +46,7 @@ public class UserController {
 		User user = userRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException("User not exist with id :" + id));
 		
 		user.setFirstname(userDetails.getFirstname());
-		user.setFirstname(userDetails.getLastname());
+		user.setLastname(userDetails.getLastname());
 		user.setMail(userDetails.getMail());
 		
 		User updatedUser = userRepository.save(user);

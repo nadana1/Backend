@@ -113,4 +113,8 @@ public class User {
                 '}';
     }
 
+    public Object getEmailId() {
+        return null;
+    }
+
 }

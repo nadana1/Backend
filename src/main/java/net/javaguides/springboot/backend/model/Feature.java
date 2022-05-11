@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="features")
-public class Features {
+public class Feature {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer idf;
@@ -21,10 +21,10 @@ public class Features {
 	private Integer pondiration;
     @Column(name="fluctuation")
 	private Integer fluctuation;
-	public Features(){
+	public Feature(){
 		
 	}
-	public Features(String namef,Integer rating,Integer pondiration, Integer fluctuation) {
+	public Feature(String namef,Integer rating,Integer pondiration, Integer fluctuation) {
 		super();
 		this.fluctuation = fluctuation;
 		this.namef = namef;

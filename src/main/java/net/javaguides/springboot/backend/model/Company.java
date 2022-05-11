@@ -15,14 +15,13 @@ public class Company {
     private Integer idc;
     @Column(name="namec")
     private String namec;
-    @Column(name="domain")
-    private String domain;
+   
     public Company(){
 
     }
-    public Company(String namec,String domain){
+    public Company(String namec){
         super();
-        this.domain = domain;
+        
         this.namec = namec;
     }
     public Integer getIdc() {
@@ -37,12 +36,7 @@ public class Company {
     public void setNamec(String namec) {
         this.namec = namec;
     }
-    public String getDomain() {
-        return domain;
-    }
-    public void setDomain(String domain) {
-        this.domain = domain;
-    }
+    
     
     
 }
